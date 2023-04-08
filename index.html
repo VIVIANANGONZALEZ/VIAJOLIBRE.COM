@@ -5,24 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIAJOLIBRE</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <main>
+    <header id="presentacion">
+        <a href="#" class="logo">
+            <img src="logoViajoLibre.jpeg" alt="logo de la compania" class="logo-img">
+            <h2 class="nombre-empresa">Viajo Libre</h2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">INICIO</a>
+            <a href="" class="nav-link">QUIENES SOMOS</a>
+            <a href="" class="nav-link">DESTINOS</a>
+            <a href="" class="nav-link">PAQUETES</a>
+            <a href="" class="nav-link">CONTACTO</a>
+        </nav>
+        <video muted autoplay loop>
+            <source src="./VIDEO/fondocaribe.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </header>
+    <div class="buscadordeviaje">
+        <h4>Comienza a programar tu viaje con nosotros</h4>
+    <form>
+        <label for="departure-date">Fecha de salida:</label>
+        <input type="date" id="departure-date" name="departure-date">
+        
+        <label for="return-date">Fecha de regreso:</label>
+        <input type="date" id="return-date" name="return-date">
+        
+        <label for="destination">Destino:</label>
+        <input type="text" id="destination" name="destination">
 
+        <label for="multidestination">MultiDestino:</label>
+        <input type="text" id="multidestination" name="multidestination">
+        
+        <label for="passengers">Pasajeros:</label>
+        <input type="text" id="passengers" name="passengers">
+
+        <input type="submit" value="Buscar">
+    </form>
+    </div>   
 </main>
 <body>
-<header>
-    <a href="#" class="logo">
-        <img src="logoViajoLibre.jpeg" alt="logo de la compania" class="logo-img">
-        <h2 class="nombre-empresa">Viajo Libre.com</h2>
-    </a>
-    <nav>
-        <a href="" class="nav-link">INICIO</a>
-        <a href="" class="nav-link">QUIENES SOMOS</a>
-        <a href="" class="nav-link">PAQUETES</a>
-        <a href="" class="nav-link">CONTACTO</a>
-    </nav>
-</header>
 <div class="contenedor">
     <div class="div-1">
           <h1>DESTINOS</h1>
@@ -36,7 +62,7 @@
           </nav>
     </div>
     <div class="div-2">
-          <h1>caja 2 con paquetes, foto carrousel y buscador</h1>
+          <h1>caja 2 con foto carrousel y paquetes </h1>
     </div>
 </div>
 <div class="quienesSomos">
@@ -78,8 +104,8 @@
       </div>
 
     <div class="col-md-4">
-        <div class="box">
-        <p>Teléfono: +541143430000</p>
+        <div class="box">   
+        <p>Ventas: 0800-222-0800</p>
         <p>Email: info@viajolibre.com</p>
         <p>Direccion: Alicia M. De Justo 350, C1107 AAH, Buenos Aires, Argentina</p>
     </div>
@@ -87,10 +113,13 @@
 
     <div>
     <div class="box">
-      <i class='bx bxl-facebook-square' ></i>
-      <i class='bx bxl-twitter'></i>
-      <i class='bx bxl-instagram-alt' ></i>
-      <i class='bx bxl-whatsapp'></i>
+      <h6>SEGUINOS</h6>
+      <box-icon name='' size='md'>
+        <i class='bx bxl-facebook-square bx-md'></i>
+        <i class='bx bxl-twitter bx-md'></i>
+        <i class='bx bxl-instagram-alt bx-md'></i>
+        <i class='bx bxl-whatsapp bx-md'></i>
+    </box-icon>
     </div>
       
     <div class="copyrightbox">
