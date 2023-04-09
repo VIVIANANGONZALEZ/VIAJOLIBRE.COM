@@ -13,7 +13,7 @@ body{
     color: white;
     text-align: center center;
     margin: 300px 0;
-    font-size: 28px;
+    font-size: 26px;
 }
 @keyframes fanimado{
     0%{
@@ -26,11 +26,20 @@ body{
         background-position: 0% 50%;
     }
     
+
 }
+
+.boxprincipio {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    
+}
+
 header{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 350px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -44,10 +53,10 @@ a{
 .logo{
     display: flex;
     align-items: center;
-    
+    margin-right: 80px;
 }
 .logo img{
-    height: 65px;
+    height: 55px;
     margin-right: 10px;
 }
 nav{
@@ -57,6 +66,8 @@ nav a{
     font-weight: 700;
     padding-right: 20px;
     justify-content: center;
+    
+    
      
 }
 nav a:hover{
@@ -71,24 +82,27 @@ nav a:hover{
         padding: 10px 0px;
     }
 }
+
 .contenedor{
     display: flex;
 }
 .div-1{
-    background-color: #5a489462;
+    background-color: #09080e34
     width: 350px;
     padding: 35px;
-    
+    margin-left: 0px;
+    margin-right: 10px;
 }
 .div-2{
-    background-color: #50548873;
+    background-color: #5a489462;
     width: 900px;
     padding: 35px;
     margin-left: 10px;
-    margin-right: 0px;  
+    margin-right: 0px;
+    margin: top 10px;
 }
 .quienesSomos{
-    background-color: #50548873;
+    background-color: #5a489462;
 }
 .contenedor2{
     display: flex;
@@ -124,8 +138,10 @@ nav a:hover{
 footer{
     display: grid;
     min-height: 50px;
-    background-color: rgba(69, 36, 92, 0.411);
+    background-color: #5a489462;
+    margin-top: 10px;
 }
+
 .containerlegal{
     display: flex;
     flex-direction: row;
@@ -135,19 +151,16 @@ footer{
 .copyrightbox{
     display: flex;
     justify-content: center;
-    font-size: medium;
+    font-size: small;
 }
-#presentacion {
-    min-height: 100vh;
-    position: relative;
-    }
+
 
     video {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 90%;
+        height: 100%;
         object-fit: cover;
         z-index: -3;
     }
@@ -161,4 +174,16 @@ footer{
     background: #1c1c1d;
     opacity: 0.5;
     mix-blend-mode: overlay;
+}
+
+.slider-container{
+    width: 300px;
+    overflow:hidden
+}
+.slider{
+    display: flex
+    width: 50%
+}
+.skider img{
+    width: 50%;
 }
