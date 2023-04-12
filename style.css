@@ -87,11 +87,11 @@ nav a:hover{
     display: flex;
 }
 .div-1{
-    background-color: #09080e34
+    background-color: #09080e57;
     width: 350px;
     padding: 35px;
-    margin-left: 0px;
-    margin-right: 10px;
+    margin-left:0 px;
+    margin-right:10px;
 }
 .div-2{
     background-color: #5a489462;
@@ -176,14 +176,26 @@ footer{
     mix-blend-mode: overlay;
 }
 
-.slider-container{
-    width: 300px;
-    overflow:hidden
+#slider-container{
+float: left;
 }
-.slider{
-    display: flex
-    width: 50%
+.slaider{
+    float: left;
+    animation: movimiento 2.5s linear infinite;
 }
-.skider img{
-    width: 50%;
+.slaider img{
+width: 500px;
+height: 500px;
+display: block;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
